@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "dotenv": "^5.0.0",
+    "mongoose": "^5.0.6",
+    "mongoose-timestamp": "^0.6.0",
+    "restify": "^6.3.4",
+    "restify-errors": "^5.0.0"
+  },
+  "name": "getlinks-backend-skill-test",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spksoft/getlinks-backend-skill-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/spksoft/getlinks-backend-skill-test/issues"
+  },
+  "homepage": "https://github.com/spksoft/getlinks-backend-skill-test#readme"
+}
