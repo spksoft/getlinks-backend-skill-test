@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "dotenv": "^5.0.0",
+    "moment": "^2.20.1",
     "mongoose": "^5.0.6",
     "mongoose-timestamp": "^0.6.0",
     "restify": "^6.3.4",
