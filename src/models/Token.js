@@ -2,19 +2,17 @@ const mongoose = require('mongoose')
 const timestamp = require('mongoose-timestamp')
 
 const { Schema } = mongoose
-const User = mongoose.model('User', new Schema({
-  username: {
+const Token = mongoose.model('Token', new Schema({
+  token: {
     type: string,
   },
-  password: {
-    type: string,
+  expireDate: {
+    type: Date,
   },
-  firstname: {
+  type: {
     type: string,
-  },
-  lastname: {
-    type: string,
+    enum: ['ACCESS_TOKEN', 'REFRESH_TOKEN']
   }
 }).plugin(timestamp))
 
-module.exports = User
+module.exports = Token
