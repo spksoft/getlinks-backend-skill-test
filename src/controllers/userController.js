@@ -1,8 +1,25 @@
-const login = (req, res, next) => {
-  res.send({
-    "Hello": "world",
-  })
-  next()
+const errors = require('restify-errors');
+
+const login = async (req, res, next) => {
+  try {
+    res.send({
+      "Hello": "world",
+    })
+    next()
+  } catch (e) {
+
+  }
+}
+
+const register = async (req, res, next) => {
+  try {
+    res.send({
+      "Hello": "world",
+    })
+    next()
+  } catch (e) {
+
+  }
 }
 
 module.exports = {
