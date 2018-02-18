@@ -1,8 +1,24 @@
 # getlinks-backend-skill-test
 
-### Test
+### Start a server by using yarn
+```
+yarn 
+yarn start
+```
+
+### Start a server by using yarn
+```
+npm install
+npm start
+```
+### Test by using yarn
 ```
 yarn
-yarn start
 yarn test
+```
+
+### Test by using npm
+```
+npm install
+npm test
 ```
