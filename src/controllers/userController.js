@@ -13,7 +13,6 @@ const login = async (req, res, next) => {
     if (resultOfQuery !== null) {
       const accessToken = jwt.sign({ data: resultOfQuery._id, secret, exp: 60 })
       const refreshToken = jwt.sign({ data: resultOfQuery._id, secret, exp: 60 * 24 })
-      console.log(accessToken)
       const dbForAccessToken = new Token({
         token: accessToken,
         isUseable: true,
