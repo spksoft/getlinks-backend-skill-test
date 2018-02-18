@@ -5,12 +5,9 @@ const { Schema } = mongoose
 const Token = mongoose.model('Token', new Schema({
   token: {
     type: String,
-    index: {
-      unique: true
-    }
   },
-  expireDate: {
-    type: Date,
+  isUseable: {
+    type: Boolean
   },
   type: {
     type: String,

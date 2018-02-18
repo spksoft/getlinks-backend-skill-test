@@ -2,6 +2,7 @@
   "dependencies": {
     "crypto-js": "^3.1.9-1",
     "dotenv": "^5.0.0",
+    "jsonwebtoken": "^8.1.1",
     "mongoose": "^5.0.6",
     "mongoose-timestamp": "^0.6.0",
     "restify": "^6.3.4",
@@ -11,7 +12,9 @@
   "description": "",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "mocha": "^5.0.1"
+  },
   "scripts": {
     "start": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
