@@ -4,19 +4,19 @@ const timestamp = require('mongoose-timestamp')
 const { Schema } = mongoose
 const User = mongoose.model('User', new Schema({
   username: {
-    type: string,
+    type: String,
     index: {
       unique: true
     }
   },
   password: {
-    type: string,
+    type: String,
   },
   firstname: {
-    type: string,
+    type: String,
   },
   lastname: {
-    type: string,
+    type: String,
   }
 }).plugin(timestamp))
 

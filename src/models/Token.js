@@ -4,7 +4,7 @@ const timestamp = require('mongoose-timestamp')
 const { Schema } = mongoose
 const Token = mongoose.model('Token', new Schema({
   token: {
-    type: string,
+    type: String,
     index: {
       unique: true
     }
@@ -13,7 +13,7 @@ const Token = mongoose.model('Token', new Schema({
     type: Date,
   },
   type: {
-    type: string,
+    type: String,
     enum: ['ACCESS_TOKEN', 'REFRESH_TOKEN']
   }
 }).plugin(timestamp))
